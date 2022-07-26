@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
@@ -7,14 +7,6 @@ public class MainMenuScript : MonoBehaviour
     public Animator animator;
     public float transitionTime = 1f;
     public bool transmit = false;
-
-    void Update()
-    {
-        if (transmit)
-        {
-            PlayGame(); 
-        }
-    }
 
     public void PlayGame()
     {
